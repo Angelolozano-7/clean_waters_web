@@ -1,0 +1,238 @@
+#root {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.logo {
+  /*padding: 3vw;*/
+  will-change: filter;
+  transition: filter 300ms;
+}
+.title1 {
+  max-width: 50vw;
+  font-size: 3vw;
+  line-height: 1.2;
+  align-items: center; /* Centra verticalmente el contenido */
+  padding-left: 5vw; /* Espacio desde el borde izquierdo del contenedor */
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+
+.backHome {
+  background-image: url("../images/Home_BackGround.jpg");
+  width: 100vw; /* Asegura que el fondo cubra toda la anchura */
+  background-repeat: repeat; /* Evita que la imagen se repita */
+  background-size: cover; 
+  height: 100vh; /* Asegura que el fondo cubra toda la altura de la vista */
+  position: relative; /* Hace que sea un contenedor de posicionamiento para la flecha */
+  padding-bottom: 40vh;
+  max-width: 100vw;
+  /*overflow: hidden; /* Asegura que todo el contenido sobresaliente se recorte */
+  
+}
+.backBlueDark {
+  background-color: #002838; /* Establece el color de fondo */
+  color: white; /* Establece el color del texto para asegurar contraste */
+  height: 100vh; /* Asegura que el fondo cubra toda la altura de la vista */
+  width: 100vw; /* Asegura que el fondo cubra toda la anchura */
+  background-repeat: repeat; /* Evita que la imagen se repita */
+  background-size: cover;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.backBlueDark2 {
+  background-image:linear-gradient(to bottom, #002f3d, #002838); /* Establece el color de fondo */
+  color: white; /* Establece el color del texto para asegurar contraste */
+  height: 100vh; /* Asegura que el fondo cubra toda la altura de la vista */
+  width: 100vw; /* Asegura que el fondo cubra toda la anchura */
+  background-repeat: repeat; /* Evita que la imagen se repita */
+  background-size: cover;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+ 
+}
+
+.mp{
+  background-color: #002838; /* Establece el color de fondo */
+  color: white; /* Establece el color del texto para asegurar contraste */
+  height: 100vh; /* Asegura que el fondo cubra toda la altura de la vista */
+  width: 100vw; /* Asegura que el fondo cubra toda la anchura */
+  background-repeat: repeat; /* Evita que la imagen se repita */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.poli{
+  background-image:linear-gradient(to bottom, #002838, #073044,#125170, #2b7da6, #5b9dbe, #84c2e1, #c3e5f7 ,#ebf3f3 ); /* Establece el color de fondo */
+  color: white; /* Establece el color del texto para asegurar contraste */
+  height: 70vh; /* Asegura que el fondo cubra toda la altura de la vista */
+  width: 100vw; /* Asegura que el fondo cubra toda la anchura */
+  background-repeat: repeat; /* Evita que la imagen se repita */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  align-items: center;
+  
+}
+
+.backWhite {
+  background-color: #ebf3f3; /* Establece el color de fondo */
+  position: relative; /* Hacemos que el polígono sea absoluto con respecto al contenedor */
+  color: #002838; /* Establece el color del texto para asegurar contraste */
+  height:fit-content; /* Asegura que el fondo cubra toda la altura de la vista */
+  width: 100vw; /* Asegura que el fondo cubra toda la anchura */
+  background-repeat: repeat; /* Evita que la imagen se repita */
+  background-size: cover;
+  }
+
+  .backEnd {
+    background-image: url(/images/footer.png);
+    width: 100vw;
+    height: 60vh;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    /* padding-top: 40vh; */
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+.button-26 {
+  margin-left: 5vw;
+  float: left;
+  background-color: #142F40;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 2vw;
+  line-height: 1em;
+  padding: 1vw 1vw;
+  text-align: center;
+  transition: all 80ms ease-in-out;
+  width: fit-content;
+  min-width: 5vw;
+  min-height: 3vw;
+  border-radius: 15px;
+}
+
+.button-26:disabled {
+  opacity: .5;
+}
+
+.button-26:focus {
+  outline: 0;
+}
+
+.button-26:hover {
+  background-color: #076CAF;
+  border-color: #0A46E4;
+}
+
+.button-26:active {
+  background-color: #076CAF;
+  border-color: #0039D7;
+}
+
+.footer{
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer img{
+  height: 30vh;
+  width: 25vw;
+  padding-left: 4vw;
+}
+.info{
+    width: 38%;
+}
+
+.info span{
+  font-size: 3.5vw;
+  font-weight: bold;
+}
+.info p{
+  font-size: 1.5vw;
+}
+
+
+@media (max-width: 1024px) {
+  .title1 {
+    max-width: 70vw;
+    font-size: 4vh;
+    padding-top:7vh;
+    }
+
+  .backHome {
+    padding-bottom: 0;
+    width: 100vw;
+    /*height: 80vh;*/
+  }
+
+  .button-26 {
+    padding: 1.5vh 1.5vh;
+    width: fit-content;
+    font-size: 4vh;
+  }
+  .backBlueDark2, .backBlueDark {
+    height: 40vh;
+  }
+
+  .mp{
+    height: 40vh;
+  }
+
+  
+  
+  .poli{
+    height: 30vh;
+  }
+  .backEnd{
+    width: 100vw;
+    height: 30vh;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    /* padding-top: 40vh; */
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer {
+    display: flex;
+    height: 30vh;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  .footer img {
+    height: auto;
+        width: 20vh;
+  }
+  .info{
+    width: 40%;
+  }
+  .info span {
+    font-size: 2vh;
+}
+.info p {
+  font-size: 1.7vh;
+  width: 80%;
+}
+
+}

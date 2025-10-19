@@ -1,0 +1,60 @@
+.logo {
+    width: 15vw;
+    will-change: filter;
+    transition: filter 300ms;
+    padding-left: 3vw;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #076CAF);
+}
+
+.active{
+    background-color: #115272;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #142F40;
+    position: relative;
+    padding-right:6vw;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 0px;
+}
+
+nav ul li {
+    list-style: none; 
+    display: block;
+    text-decoration: none;
+    color: #142F40;
+    padding: 1.2vw;
+    border-radius: 0.5rem;
+    font-size: 2.3vw;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #076CAF;
+}
+
+
+@media (max-width: 1024px) {
+    .logo {
+        width: 15vh;
+        padding-top: 2vh;
+    }
+    nav {
+        justify-content: center;
+    }
+    nav ul li {
+        font-size: 5vw;
+
+    }
+}

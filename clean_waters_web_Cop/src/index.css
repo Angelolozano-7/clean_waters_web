@@ -1,0 +1,29 @@
+
+
+:root {
+  font-family:  Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1vw; /* Base font size */
+}
+
+body{
+  margin:0;
+  margin-right: 0;
+  max-width: 100vw;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.6;
+}
+
+.color-blueDark {
+  color: #142F40;
+}
+
+.color-blueMedium {
+  color: #115272; 
+}
+
+.color-blueLight {
+  color: #076CAF; 
+}

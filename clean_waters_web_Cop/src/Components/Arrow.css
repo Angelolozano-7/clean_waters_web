@@ -1,0 +1,41 @@
+
+
+.arrow-container {
+  position: absolute;
+  right: 3vw; 
+  bottom: 28vh;
+  animation: bounce 2s infinite;
+}
+
+.arrow-container .arrow-img {
+  width: 20vw; /* Anchura como porcentaje del contenedor para responsividad */
+  max-width: 200px; /* Máximo tamaño del PNG */
+  height: 40vh;
+  
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 1050px) {
+  .arrow-container {
+    right: 0vw; 
+    bottom: 25vh;
+   }
+
+  .arrow-container .arrow-img {
+    width: 20vh; /* Anchura como porcentaje del contenedor para responsividad */
+    max-width: 200px; /* Máximo tamaño del PNG */
+    height: 40vh;
+    
+  }
+}

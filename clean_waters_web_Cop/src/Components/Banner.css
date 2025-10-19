@@ -1,0 +1,67 @@
+/* Banner.css */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10vh;
+    height: 70vh;
+    width: 50vw;
+    align-items: center;
+}
+.card-izq {
+    width: 40%;
+    background-color: #142F40;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 60%;
+    align-items: flex-start;
+}
+
+.card-der {
+    width: 40%;
+    background-color: #076CAF;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+    align-items: center;
+}
+.card-izq h1 {
+    color: white; /* Color blanco para h1 */
+    font-size: 3vh;
+}
+
+.card-der h1 {
+    color: #142F40; /* Color blanco para h1 */
+    font-size: 3vh;
+}
+.card-der h2 {
+    font-size: 3vh;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #0056b3;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004085;
+}
+
+@media (max-width: 1024px) {
+
+
+}

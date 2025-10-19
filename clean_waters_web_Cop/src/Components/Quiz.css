@@ -1,0 +1,100 @@
+.quiz-container{
+  height: 70vh;
+}
+
+
+.options-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Establece dos columnas */
+  grid-template-rows: repeat(1, 1fr); /* Establece dos filas */
+  padding-left: 40vw; /* Ajusta según necesidad */
+  padding-top: 10vh;
+}
+.question{
+  font-size: 2.5vw;
+  padding-left: 2vw;
+}
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 80%; /* Opcional, dependiendo del diseño deseado */
+  padding-bottom: 5vh;
+}
+
+.circle {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  border: 2px solid #142F40;
+  background-color: #142F40;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 1.5vw;
+}
+
+.option.selected .circle {
+  background-color: #076CAF;
+}
+
+
+.next {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ /* padding-left: 90vh;*/
+  padding-bottom: 5vh;
+}
+
+.next-button {
+/*margin-top: 20px;
+padding: 10px 20px;*/
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.next-button:hover {
+background-color: #0056b3;
+}
+
+
+
+@media (max-width: 1024px) {
+  .quiz-container{
+    height: 60vh;
+  }
+  .options-container{
+    padding-left: 30vw;
+  }
+
+  .circle{
+    width: 7vh;
+    height: 7vh;
+  }
+  .description{
+    font-size: 2vh;
+  }
+  .question{
+    font-size: 2.5vh;
+    padding-left: 2vh;
+  }
+  .send-button {
+    /* margin-top: 2vh; */
+    /* padding: 10px 20px; */
+    background-color: #142F40;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10vh;
+    height: 7vh;
+    font-size: 2vh;
+    border: 2px solid #142F40;
+    margin-bottom: 1vh;
+  }
+}

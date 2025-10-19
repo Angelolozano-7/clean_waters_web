@@ -1,0 +1,52 @@
+/* DividedScreenDer.css */
+.container_t {
+  display: flex;
+    align-items: flex-end;
+    height: 100%;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  
+  .texto_t {
+    max-width: 50%; /* Limita el ancho máximo del texto */
+  }
+  
+  .texto_t h1 {
+    text-align: center; /* Alinea el texto a la derecha */
+    font-size: 2vw; /* Tamaño del título */
+  }
+  
+  .texto_t p {
+    text-align: left; /* Alinea el texto a la derecha */
+    font-size: 1.5vw; /* Tamaño del contenido */
+  }
+
+  .texto_w {
+    justify-content:baseline;
+    max-width: 50%; /* Limita el ancho máximo del texto */
+  }
+  
+  .texto_w h1 {
+    text-align: left; /* Alinea el texto a la derecha */
+    font-size: 2em; /* Tamaño del título */
+
+  }
+  
+  @media (max-width: 1024px) {
+    .container_t{
+      padding-right: 5vw;
+    }
+    .texto_t{
+      max-width: 60%;
+    }
+    .texto_t h1 {
+      text-align: center; /* Alinea el texto a la derecha */
+      font-size: 2vh; /* Tamaño del título */
+    }
+    
+    .texto_t p {
+      text-align: left; /* Alinea el texto a la derecha */
+      font-size: 1.5vh; /* Tamaño del contenido */
+    }
+  
+}

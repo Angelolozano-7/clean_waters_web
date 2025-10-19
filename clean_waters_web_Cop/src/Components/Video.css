@@ -1,0 +1,68 @@
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.videoC {
+  width: 80vw;
+  height: 80vh;
+  position:absolute;
+}
+.videoP {
+  cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+  width: 80vw;
+  height: 80vh;
+  position:absolute;
+  border-radius: 15px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10em; /* Tamaño específico para el botón */
+  height: 10em; /* Tamaño específico para el botón */
+  background: url('../../images/play.svg') no-repeat center center;
+  background-size: contain;
+}
+
+.progress-bar-container {
+  position: absolute;
+  left: 8.5vw;
+  bottom: 0;
+  width: 62.7vw;
+  height: 10px; /* Altura específica para la barra de progreso */
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.8);
+  border-radius: 5px;
+  width: 0%;
+}
+
+@media (max-width: 1024px) {
+.videoC{ 
+  width: 90vw;
+  height: 35.5vh;
+}
+
+.videoP{
+  width: 90vw;
+  height: 40vh;
+}
+
+.progress-bar-container{
+  left: 0;
+  /*bottom: 0;*/
+  width: 90vw;
+  }
+}
